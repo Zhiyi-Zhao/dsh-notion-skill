@@ -10,7 +10,7 @@ version: 1.0.0
 
 ## 前置条件
 
-- 已安装本技能：`SKILL.md` 与 `notion_api.py` 位于 `<agents_home>/skills/notion/`（默认 `~/.agents/skills/notion/`，Windows 为 `%USERPROFILE%\.agents\skills\notion\`）。
+- 已安装本技能：`SKILL.md` 与 `notion_api.py` 位于 `<agents_home>/skills/notion/`（默认 `~/.agents/skills/notion/`，Windows 为 `%USERPROFILE%\.agents\skills\notion\`）。通过 `dsh plugin add` 安装（bundle）时位于插件包内 `skills/notion/`——两种方式下脚本都与 SKILL.md 同目录，按 SKILL.md 所在目录解析 `notion_api.py` 即可。
 - API Token 已配置：环境变量 `NOTION_TOKEN`，或文件 `<dsh_home>/notion/token`（默认 `~/.dsh/notion/token`，Windows 为 `%USERPROFILE%\.dsh\notion\token`；优先读环境变量）。
 - Token 对应的 Integration 必须已连接到目标页面/数据库：在页面右上角 `...` → `Connections` → 添加集成，选择对应集成名称。
 
