@@ -34,10 +34,15 @@ Markdown bodies support: headings, bullet/numbered lists, to-dos, quotes, code b
 
 ### 2. Install the skill
 
+Either of the two ways:
+
 ```bash
+# Option A: install via dsh plugin add (recommended; the repo declares a dsh.bundle manifest)
+dsh plugin --profile web add github:Zhiyi-Zhao/dsh-notion-skill
+
+# Option B: copy with the install scripts into ~/.agents/skills/notion/
 # Windows (PowerShell)
 powershell -ExecutionPolicy Bypass -File install.ps1
-
 # macOS / Linux
 bash install.sh
 ```

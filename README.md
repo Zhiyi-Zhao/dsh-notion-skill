@@ -34,10 +34,15 @@ markdown 正文支持：标题、无序/有序列表、待办、引用、代码�
 
 ### 2. 安装技能
 
+两种方式任选：
+
 ```bash
+# 方式 A：通过 dsh plugin add 安装（推荐，仓库已声明 dsh.bundle manifest）
+dsh plugin --profile web add github:Zhiyi-Zhao/dsh-notion-skill
+
+# 方式 B：安装脚本复制到 ~/.agents/skills/notion/
 # Windows (PowerShell)
 powershell -ExecutionPolicy Bypass -File install.ps1
-
 # macOS / Linux
 bash install.sh
 ```
