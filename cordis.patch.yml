@@ -1,0 +1,7 @@
+# dsh-notion-skill bundle patch: register the notion skill provider into the
+# host skill registry (its row is host-plane, so every agent preset's scope
+# chain merges this skill). The provider serves skills/notion/SKILL.md from
+# this package, with the notion_api.py helper available in the same directory.
+- insert:
+    - id: notion
+      name: 'dsh-notion-skill'
