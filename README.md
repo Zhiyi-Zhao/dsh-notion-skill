@@ -59,6 +59,8 @@ export NOTION_TOKEN="ntn_xxx"        # macOS/Linux
 $env:NOTION_TOKEN = "ntn_xxx"        # PowerShell
 ```
 
+> **Token 文件说明**：`notion/token` 是明文文本文件，仅含 token 本身，由本机 DSH 配置目录持有，**不会写入任何代码或仓库文件**。token 的权限范围即 Notion 集成的授权范围——只能访问已连接（Connections）给该集成的页面/数据库。建议在 Unix 系统上收紧文件权限为仅本人可读写：`chmod 600 ~/.dsh/notion/token`。
+
 ### 4. 授权页面
 
 在 Notion 里，对**每个**希望 Agent 访问的页面/数据库：右上角 `...` → **Connections** → 添加你的集成。给父页面授权后其子页面自动可见。

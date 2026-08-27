@@ -59,6 +59,8 @@ export NOTION_TOKEN="ntn_xxx"        # macOS/Linux
 $env:NOTION_TOKEN = "ntn_xxx"        # PowerShell
 ```
 
+> **About the token file**: `notion/token` is a plain-text file holding only the token, kept in your local DSH config directory; it is **never written into any code or repo file**. The token's scope is exactly the Notion integration's authorization scope - it can only reach pages/databases connected to that integration. On Unix systems, tighten the file to owner-only access: `chmod 600 ~/.dsh/notion/token`.
+
 ### 4. Authorize pages
 
 In Notion, for **every** page/database the agent should access: top-right `...` -> **Connections** -> add your integration. Child pages of an authorized parent become visible automatically.
