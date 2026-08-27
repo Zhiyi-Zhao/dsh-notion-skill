@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Secrets — never commit tokens
+token
+*.token
+.env
+
+# OS
+.DS_Store
+Thumbs.db
