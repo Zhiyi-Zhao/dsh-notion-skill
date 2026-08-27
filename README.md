@@ -1,5 +1,7 @@
 # dsh-notion-skill
 
+[English](README.en.md) | 中文
+
 让 [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) 的 Agent 通过 **Notion 官方 REST API** 读写你的 Notion 工作区 —— 搜索页面/数据库、读取页面内容（转 markdown）、创建/更新页面、查询/新增/更新数据库条目。
 
 纯 Python 标准库实现，**零第三方依赖**，Windows / macOS / Linux 通用。
