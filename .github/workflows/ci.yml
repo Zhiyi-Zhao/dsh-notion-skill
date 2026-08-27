@@ -20,3 +20,5 @@ jobs:
         run: python -m py_compile skills/notion/notion_api.py
       - name: Unit tests
         run: python -m unittest discover -s tests -v
+      - name: Node provider tests
+        run: node --test tests/provider.test.mjs
